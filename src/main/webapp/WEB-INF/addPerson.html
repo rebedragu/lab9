@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="addPerson.css">
+    <title>Add Person</title>
+</head>
+<body>
+<div class="container">
+    <h2>Add Person</h2>
+    <form action="AddPerson" method="POST">
+        <label for="name">First and Last Name</label>
+        <input type="text" id="name" name="name" required><br>
+        <label>Date of Birth</label>
+        <div class="date-inputs">
+            <input type="text" id="day" name="day" placeholder="Day" required>
+            <input type="text" id="month" name="month" placeholder="Month" required>
+            <input type="text" id="year" name="year" placeholder="Year" required>
+        </div>
+        <label for="address">Address</label>
+        <textarea id="address" name="address" rows="4" cols="50" required></textarea><br>
+        <label for="phone">Phone Number</label>
+        <input type="text" id="phone" name="phone" required><br>
+        <input type="submit" value="Add" name="submit">
+    </form>
+</div>
+</body>
+</html>
